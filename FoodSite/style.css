@@ -1,0 +1,378 @@
+
+
+                                    /* INDEX HTML_______________________________________________ */
+                                    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #FFFFFF, #FFB74D);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    color: #fff;
+    height: 100vh;
+    padding: 30px;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 20px 0;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+
+/* Content Section */
+.content {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    margin-right: 200px;
+}
+
+.content h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content h1 span {
+    color: #f39c12;
+    font-style: italic;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.buttons button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.buttons button.demo {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.buttons button.purchase {
+    background-color: #333;
+    color: #fff;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+    background-color: #e67e22;
+    color: white;
+}
+
+/* Diagonal Image Grid */
+.diagonal-grid {
+    position: relative;
+    margin-top: 50px;
+    height: 550px;
+    overflow: hidden;
+}
+
+.img {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.img1 {
+    top: 0;
+    left: 5%;
+    transform: rotate(-10deg);
+}
+
+.img2 {
+    top: 50px;
+    left: 25%;
+    transform: rotate(5deg);
+}
+
+.img3 {
+    top: 100px;
+    left: 45%;
+    transform: rotate(-7deg);
+}
+
+.img4 {
+    top: 150px;
+    left: 65%;
+    transform: rotate(8deg);
+}
+
+.img5 {
+    top: 200px;
+    left: 85%;
+    transform: rotate(-5deg);
+}
+
+/* Adding delay to each item for a staggered effect */
+.food-item:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.food-item:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.food-item:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.food-item:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.promo-banner {
+    background-color: #FF7043;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* Content Container for Rotating Items */
+.content-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Container for the Slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    perspective: 1500px; /* 3D effect */
+}
+
+/* The Slider */
+.slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+}
+
+/* Individual Slider Items */
+.slider-item {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0.9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+/* Info and Deal Badge */
+.item-info {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.deal-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6347; /* Tomato color */
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-left h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.footer-left p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-center ul, .footer-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-center li, .footer-right li {
+    margin: 10px 0;
+}
+
+.footer-center a, .footer-right a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-center a:hover, .footer-right a:hover {
+    color: #f39c12;
+}
+
+/* Keyframe Animation for Slide In */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .diagonal-grid {
+        height: auto;
+    }
+
+    .img {
+        position: relative;
+        width: 90%;
+        margin: 10px auto;
+        transform: rotate(0);
+    }
+
+    .slider-container {
+        height: 300px;
+    }
+
+    .slider-item {
+        width: 150px;
+        height: 200px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        flex: none;
+        margin: 10px 0;
+    }
+
+    .footer-left h3 {
+        font-size: 20px;
+    }
+
+    .footer-center a, .footer-right a {
+        font-size: 16px;
+    }
+}
