@@ -5,11 +5,12 @@
 <?php include 'includes/navbar.php'; ?>
 
 <!-- Hero Section -->
-<header class="pt-28 px-6 md:px-16 max-w-6xl mx-auto animate-fadeIn">
+<header class="pt-28 px-6 md:px-16 w-full animate-fadeIn">
+
     <h2 class="text-4xl md:text-6xl font-semibold text-gray-800">
         Look like an <span class="text-amber-500 italic">expert</span><br/> right from the start
     </h2>
-    <p class="mt-4 text-lg text-gray-600">Head start your stylish food website with a gorgeous template.</p>
+    <p class="mt-4 text-lg text-gray-600">SINCE 1920</p>
 
     <div class="mt-6 flex gap-4">
         <a 

@@ -17,7 +17,7 @@ include __DIR__ . '/../config/db.php';
 
 <!-- Today's Specials -->
 <section class="px-6 md:px-0 max-w-6xl mx-auto mb-12 fade-in">
-    <h2 class="text-3xl font-semibold text-gray-800 mb-6">🔥 Today's Specials</h2>
+    <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">🔥 Today's Specials</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <?php
@@ -50,7 +50,7 @@ include __DIR__ . '/../config/db.php';
 
 <!-- Delicious Items -->
 <section class="px-6 md:px-0 max-w-6xl mx-auto mb-12 fade-in">
-    <h2 class="text-3xl font-semibold text-gray-800 mb-6">🍽️ Our Delicious Items</h2>
+    <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">🍽️ Our Delicious Items</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
         <?php

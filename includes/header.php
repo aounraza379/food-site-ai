@@ -17,4 +17,4 @@ if (session_status() == PHP_SESSION_NONE) {
   <link rel="script" href="assets/js/main.js">
 </head>
 
-<body class="bg-gradient-to-br from-white to-amber-300 overflow-x-hidden">
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-white to-amber-300 overflow-x-hidden">

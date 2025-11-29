@@ -33,7 +33,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     unset($_SESSION['cart']);
-    echo "Order placed successfully! Order ID: $order_id";
+    header("Location: /pages/order-confirmation.php?order_id=" . $order_id);
+    exit();
 } else {
     header("Location: /pages/cart.php");
     exit();

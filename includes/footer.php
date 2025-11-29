@@ -1,4 +1,4 @@
-<footer class="bg-gray-900 text-white py-10 px-6 w-full">
+<footer class="bg-gray-900 text-white py-10 px-6 w-full mt-auto">
   <div class="max-w-6xl mx-auto flex flex-wrap gap-8 justify-between items-start">
     <div class="min-w-[250px]">
       <h3 class="text-2xl font-bold text-amber-500">Foodie's Paradise</h3>
