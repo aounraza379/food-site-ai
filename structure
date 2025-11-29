@@ -1,0 +1,33 @@
+foodsite/ 
+│ 
+├─ assets/ 
+│   ├─ css/ 
+│   ├─ js/
+│   ├─ images/ 
+│   
+├─ config/
+│   ├─ db.php
+│    
+├─ includes/
+│   ├─ header.php 
+│   ├─ navbar.php 
+│   ├─ footer.php
+│   
+├─ pages/
+│  ├─ menu.php 
+│  ├─ about.php 
+│  ├─ contact.php 
+│  ├─ cart.php
+│  ├─ privacy_policy.php
+│
+├─ process/
+│  ├─ contactprocess.php 
+│  ├─ add-to-cart.php
+│  ├─ place-order.php
+│  ├─ update-cart.php
+│ 
+├─ styles/
+│  ├─ input.css 
+│  ├─ output.css
+│
+├─ index.php 

@@ -97,6 +97,7 @@
 <!-- Footer -->
 <?php include 'includes/footer.php'; ?>
 
+<!-- Script -->
 <script src='/assets/js/main.js'></script>
 
 </body>

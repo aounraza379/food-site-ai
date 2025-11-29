@@ -47,7 +47,7 @@ menuBtn && menuBtn.addEventListener('click', () => {
     requestAnimationFrame(animate);
   }
 
-  window.addEventListener('load', initSlider);
+ window.addEventListener('load', initSlider);
 
   let resizeTimeout;
   window.addEventListener('resize', () => {

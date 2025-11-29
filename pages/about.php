@@ -1,35 +1,11 @@
 <!-- Header -->
 <?php include __DIR__ . '/../includes/header.php'; ?>
 
-<style>
-    body {
-        font-family: "Poppins", sans-serif;
-        background: linear-gradient(to bottom right, #ffffff, #ffb74d);
-    }
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    .fade-in {
-        animation: fadeInUp 1s ease-in-out forwards;
-    }
-</style>
-
-</head>
-<body class="overflow-x-hidden">
-
-
 <!-- Navbar -->
 <?php include __DIR__ . '/../includes/navbar.php'; ?>
 
 <!-- About Section -->
-<section class="pt-28 pb-24 px-6 animate-fadeIn">
+<section class="pt-28 pb-24 px-6 fade-in">
     <div class="max-w-4xl mx-auto text-center">
         <h1 class="text-4xl md:text-5xl font-semibold text-amber-500 mb-4">About Us</h1>
         <hr class="border-t-2 border-amber-400 w-24 mx-auto mb-8" />
@@ -119,6 +95,27 @@
 
 <!-- Script -->
 <script src='/assets/js/main.js'></script>
+
+<!-- Style -->
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(to bottom right, #ffffff, #ffb74d);
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .fade-in {
+        animation: fadeInUp 1s ease-in-out forwards;
+    }
+</style>
 
 </body>
 </html>
