@@ -1,8 +1,16 @@
 foodsite/ 
 │ 
+├─ admin/ 
+│   ├─ auth.php
+│   ├─ index.php
+│   ├─ login.php
+│   ├─ logout.php
+│   ├─ orders.php
+│   ├─ order-details.php
+│
 ├─ assets/ 
-│   ├─ css/ 
-│   ├─ js/
+│   ├─ css/ custom.css
+│   ├─ js/ main.js
 │   ├─ images/ 
 │   
 ├─ config/
@@ -19,6 +27,8 @@ foodsite/
 │  ├─ contact.php 
 │  ├─ cart.php
 │  ├─ privacy_policy.php
+│  ├─ order-confirmation.php
+│  ├─ checkout.php
 │
 ├─ process/
 │  ├─ contactprocess.php 

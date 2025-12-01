@@ -76,4 +76,21 @@ $order_items = $conn->query("SELECT * FROM order_items WHERE order_id = $order_i
     </div>
 </div>
 
+<?php if (isset($_SESSION['order_extra'])): ?>
+    <p class="text-center text-gray-700 mt-2">
+        <strong>Phone:</strong> <?= htmlspecialchars($_SESSION['order_extra']['phone']) ?>
+    </p>
+
+    <p class="text-center text-gray-700">
+        <strong>Address:</strong> <?= htmlspecialchars($_SESSION['order_extra']['address']) ?>
+    </p>
+
+    <?php if (!empty($_SESSION['order_extra']['notes'])): ?>
+    <p class="text-center text-gray-700">
+        <strong>Note:</strong> <?= htmlspecialchars($_SESSION['order_extra']['notes']) ?>
+    </p>
+    <?php endif; ?>
+<?php endif; ?>
+
+
 <?php include '../includes/footer.php'; ?>
